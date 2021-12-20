@@ -3,7 +3,7 @@ const gElement = document.getElementById ("g");
 const bElement = document.getElementById ("b");
 
 const levels = Array.from(document.getElementsByClassName("mode"));
-const squares = Aarray.from(document.getElementsByClassName("square"));
+const squares = Array.from(document.getElementsByClassName("square"));
 
 let selectedLevelButton = levels.find((level) => {
   const classList = Array.from(level.classList);
@@ -25,9 +25,16 @@ gameLevel = this.innerHTML;
  const startButton = document.getElementById("reset");
  
  startButton.addEventListener("click", function () {
-   for (let i = 0; i < squares.length; i = i + 1){
+   for (let i = 0; i < squares.length; i = i + 1) {
+const red = Math.floor(Math.random() * 256);
+const green = Math.floor(Math.random() * 256);
+const blue = Math.floor(Math.random() * 256);
+
+const rgbString = "rgb(" + red + "," + green + "," + blue + ")";
+
+
      const square = squares [i];
-     square.style.backgroundColor = "rgb(200, 45, 255)";
+     square.style.backgroundColor = rgbString;
 
      console.log("i = " + i);
      console.log(squares[i]);
