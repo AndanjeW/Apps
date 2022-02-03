@@ -1,7 +1,12 @@
 
 body {
   background-color: #fff;
-  background-color: #232323;
+  /* background-color: #232323; */
+  /* background-image: url("/assets/backgrounds/main.png"); */
+  background-image: url("https://wallpaperaccess.com/full/568191.png");
+  background-position: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
   font-family: "Dancing Script", "Cursive";
 }
 
@@ -20,7 +25,7 @@ body {
   background-color: antiquewhite;
   transition: background 0.5s;
   cursor: pointer;
-  border-radius: 20%;
+  border-radius: 50%;
 }
 
 h1 {
