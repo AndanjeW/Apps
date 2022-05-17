@@ -1,2 +1,2 @@
 # Apps
-New gaming app
+RGB Guessing Game
